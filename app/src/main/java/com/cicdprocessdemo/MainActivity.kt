@@ -14,9 +14,12 @@ class MainActivity : AppCompatActivity() {
         //setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        AppCenter.start(application,"aed602e3-bdf6-475d-abb1-1d98d7d30490",Analytics::class.java,Crashes::class.java)
+        AppCenter.start(application,"5417f7c5-a70f-4b80-a912-5254dc357bf0",Analytics::class.java,Crashes::class.java)
         binding.calculate.setOnClickListener{
-            throw Exception("Something went wrong")
+        //Crashes.generateTestCrash()
+        //  throw Exception("Something went wrong")
+        //Analytics.trackEvent("track any event using this class")
+            binding.ageVal.text=binding.ageText.text.toString()
         }
     }
 }
