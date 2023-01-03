@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         //setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        AppCenter.start(application,"aed602e3-bdf6-475d-abb1-1d98d7d30490",Analytics::class.java,Crashes::class.java)
+        AppCenter.start(application,"95ee3e1d-ee06-4378-b613-42a9e95310b0",Analytics::class.java,Crashes::class.java)
         binding.calculate.setOnClickListener{
         //Crashes.generateTestCrash()
         //  throw Exception("Something went wrong")
